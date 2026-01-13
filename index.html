@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD Bank - Win $500 App Raffle</title>
+    <meta name="description" content="Enter for a chance to win a $500 bonus with TD Bank. Open an account or enroll in our app giveaway today.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <span class="td-box">TD</span>
+                <span class="td-text">Bank</span>
+            </div>
+            <div class="lang-toggle">
+                <button id="lang-en" class="active">EN</button>
+                <button id="lang-es">ES</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-image">
+                    <div class="amount-display animate-pop">
+                        <span class="dollar-sign">$</span>500
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <h1 id="hero-title">Win $500 in our App Raffle with TD Bank!</h1>
+                    <p id="hero-desc">Enter for a chance to win a $500 bonus by submitting an entry through your TD Bank Mobile App account. No purchase necessary. See rules for details.</p>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="btn-open-account">Open an account</button>
+                        <button class="btn btn-secondary" id="btn-enroll">Enroll in Giveaway</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container feature-grid">
+                <div class="feature-card">
+                    <div class="icon">📱</div>
+                    <h3 id="feat-1-title">Mobile First</h3>
+                    <p id="feat-1-desc">Submit your entry directly through the TD Bank Mobile App.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔒</div>
+                    <h3 id="feat-2-title">Secure Entry</h3>
+                    <p id="feat-2-desc">Your information is protected by industry-leading security.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">✨</div>
+                    <h3 id="feat-3-title">Instant Rewards</h3>
+                    <p id="feat-3-desc">View your coupon codes and rewards instantly upon enrollment.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sign-in Modal -->
+    <div id="signin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="signin-header">
+                <h2>Secure Sign In</h2>
+                <p id="modal-subtitle">Sign in to enroll in the $500 App Raffle</p>
+            </div>
+            <form id="signin-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Sign In & Enroll</button>
+                <div class="form-footer">
+                    <a href="#">Forgot username or password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div id="toast" class="toast">
+        Registration successful! You are now enrolled.
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p id="footer-text">&copy; 2026 TD Bank, N.A. All Rights Reserved. Member FDIC. Equal Housing Lender.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
